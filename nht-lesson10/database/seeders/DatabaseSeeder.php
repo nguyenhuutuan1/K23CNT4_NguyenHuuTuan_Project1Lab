@@ -20,7 +20,8 @@ class DatabaseSeeder extends Seeder
         // ]);
 
         $this->call([
-            NhtVattuTableSeeder::class
+            NhtVattuTableSeeder::class,
+            NhtNhaCCTableSeeder::class
         ]);
     }
 }

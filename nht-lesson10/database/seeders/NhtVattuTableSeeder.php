@@ -15,16 +15,18 @@ class NhtVattuTableSeeder extends Seeder
     {
         //
         DB::table('nhtvattu')->insert([
-            'nhtMaVTu'=>'DD01',
-            'nhtTenVTu'=>'Đầu DVD Hitachi 1 cửa',
-            'nhtDvTinh'=>'Bộ',
-            'nhtPhanTram'=>40,
+            'nhtMaVTu' => 'DD01',
+            'nhtTenVTu' => 'Đầu DVD Hitachi 1 cửa',
+            'nhtDvTinh' => 'Bộ',
+            'nhtPhanTram' => 40,  
         ]);
+        
         DB::table('nhtvattu')->insert([
-            'nhtMaVTu'=>'DD01',
-            'nhtTenVTu'=>'Đầu DVD Hitachi 2 cửa',
-            'nhtDvTinh'=>'Bộ',
-            'nhtPhanTram'=>50,
+            'nhtMaVTu' => 'DD02',
+            'nhtTenVTu' => 'Đầu DVD Hitachi 2 cửa',
+            'nhtDvTinh' => 'Bộ',
+            'nhtPhanTram' => 50,  
         ]);
+        
     }
 }
