@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create('nhtctdondh', function (Blueprint $table) {
             // $table->id();
             // $table->timestamps();
-            $table->string('nhtSoDH');
+            $table->string('nhtSoDH');  
             $table->string('nhtMaVTu');
             $table->integer('nhtSLDat');
             // Tạo khóa chính trên 2 cột (nhtSoDH, nhtMaVTu)
