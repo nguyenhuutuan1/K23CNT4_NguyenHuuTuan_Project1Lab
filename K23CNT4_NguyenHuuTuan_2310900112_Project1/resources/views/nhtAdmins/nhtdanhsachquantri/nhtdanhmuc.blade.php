@@ -14,7 +14,7 @@
                     <div class="card-body bg-primary text-white">
                         <h5 class="card-title">Sản Phẩm</h5>
                         <p class="card-text">Số lượng sản phẩm</p>
-                        <a href="/vtd-admins/vtd-san-pham" class="btn btn-outline-light">Xem Sản Phẩm</a>
+                        <a href="/nht-admins/nht-san-pham" class="btn btn-outline-light">Xem Sản Phẩm</a>
                     </div>
                 </div>
             </div>
@@ -25,7 +25,7 @@
                     <div class="card-body bg-info text-white">
                         <h5 class="card-title">Tin Tức</h5>
                         <p class="card-text">Số lượng bài viết</p>
-                        <a href="/vtd-admins/vtd-tin-tuc" class="btn btn-outline-light">Xem Tin Tức</a>
+                        <a href="/nht-admins/nht-tin-tuc" class="btn btn-outline-light">Xem Tin Tức</a>
                     </div>
                 </div>
             </div>
@@ -36,7 +36,7 @@
                     <div class="card-body bg-success text-white">
                         <h5 class="card-title">Tài Khoản Người Dùng</h5>
                         <p class="card-text">Số lượng người dùng</p>
-                        <a href="/vtd-admins/vtd-nguoi-dung" class="btn btn-outline-light">Xem Người Dùng</a>
+                        <a href="/nht-admins/nht-nguoi-dung" class="btn btn-outline-light">Xem Người Dùng</a>
                     </div>
                 </div>
             </div>

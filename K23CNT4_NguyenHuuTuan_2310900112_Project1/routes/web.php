@@ -1,12 +1,12 @@
 <?php
 
-use App\Http\Controllers\NHT_QUAN_TRIController;
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\nht_LOAI_SAN_PHAMController;
-use App\Http\Controllers\nht_SAN_PHAMController;
-use App\Http\Controllers\nht_KHACH_HANGcontroller;
-use App\Http\Controllers\nht_DANH_SACH_QUAN_TRIController;
-use App\Http\Controllers\nht_HOA_DONController;
+use App\Http\Controllers\NHT_LOAI_SAN_PHAMController;
+use App\Http\Controllers\NHT_SAN_PHAMController;
+use App\Http\Controllers\NHT_KHACH_HANGcontroller;
+use App\Http\Controllers\NHT_DANH_SACH_QUAN_TRIController;
+use App\Http\Controllers\NHT_HOA_DONController;
+use App\Http\Controllers\NHT_CT_HOA_DONController;
 
 /*
 |--------------------------------------------------------------------------
@@ -35,7 +35,7 @@ Route::get('/nht-admins/nhtdanhsachquantri/nhtsanpham', [NHT_DANH_SACH_QUAN_TRIC
 Route::get('/nht-admins/nhtdanhsachquantri/nhtmota/{id}', [NHT_DANH_SACH_QUAN_TRIController::class, 'mota'])->name('nhtAdmins.nhtdanhsachquantri.danhmuc.mota');
 Route::get('/nht-admins/nhtdanhsachquantri/nhtnguoidung', [NHT_DANH_SACH_QUAN_TRIController::class, 'nguoidung'])->name('nhtAdmins.nhtdanhsachquantri.nguoidung');
 
-Route::get('/nht-admins/nht-loai-san-pham',[NHT::class,'nhtList'])->name('nhtadmins.nhtloaisanpham');
+Route::get('/nht-admins/nht-loai-san-pham',[NHT_LOAI_SAN_PHAMController::class,'nhtList'])->name('nhtadmins.nhtloaisanpham');
 Route::get('/nht-admins/nht-loai-san-pham/nht-create',[NHT_LOAI_SAN_PHAMController::class,'nhtCreate'])->name('nhtadmin.nhtloaisanpham.nhtcreate');
 Route::post('/nht-admins/nht-loai-san-pham/nht-create',[NHT_LOAI_SAN_PHAMController::class,'nhtCreateSunmit'])->name('nhtadmin.nhtloaisanpham.nhtCreateSunmit');
 Route::get('/nht-admins/nht-loai-san-pham/nht-edit/{id}',[NHT_LOAI_SAN_PHAMController::class,'nhtEdit'])->name('nhtadmin.nhtloaisanpham.nhtEdit');

@@ -46,7 +46,7 @@
                         <!-- Số lượng -->
                         <div class="mb-3">
                             <label for="nhtSoLuong" class="form-label">Số lượng</label>
-                            <input type="number" name="nhtSoLuong" class="form-control" value="{{ old('nhtSoLuong', $vtdsanpham->nhtSoLuong) }}">
+                            <input type="number" name="nhtSoLuong" class="form-control" value="{{ old('nhtSoLuong', $nhtsanpham->nhtSoLuong) }}">
                             @error('nhtSoLuong')
                                 <div class="alert alert-danger mt-2">{{ $message }}</div>
                             @enderror
@@ -66,7 +66,7 @@
                                 @foreach ($nhtloaisanpham as $item)
                                     <option value="{{ $item->id }}" 
                                         {{ old('nhtMaLoai', $nhtsanpham->nhtMaLoai) == $item->id ? 'selected' : '' }}>
-                                        {{ $item->vtdTenLoai }}
+                                        {{ $item->nhtTenLoai }}
                                     </option>
                                 @endforeach
                             </select>
@@ -81,7 +81,7 @@
                             <label for="nhtTrangThai" class="form-label">Trạng Thái</label>
                             <div class="col-sm-10">
                                 <input type="radio" id="nhtTrangThai1" name="nhtTrangThai" value="1" {{ old('nhtTrangThai', $nhtsanpham->nhtTrangThai) == 1 ? 'checked' : '' }} />
-                                <label for="vtdTrangThai1">Khóa</label>
+                                <label for="nhtTrangThai1">Khóa</label>
                                 &nbsp;
                                 <input type="radio" id="nhtTrangThai0" name="nhtTrangThai" value="0" {{ old('nhtTrangThai', $nhtsanpham->nhtTrangThai) == 0 ? 'checked' : '' }} />
                                 <label for="nhtTrangThai0">Hiển Thị</label>

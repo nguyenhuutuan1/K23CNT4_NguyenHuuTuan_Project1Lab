@@ -6,7 +6,7 @@ use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
 
-class NHT_CT_HOA_DONTableSeeder.php extends Seeder
+class NHT_CT_HOA_DONTableSeeder extends Seeder
 {
    
     public function run(): void
