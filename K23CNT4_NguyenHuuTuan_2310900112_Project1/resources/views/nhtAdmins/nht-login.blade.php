@@ -165,7 +165,7 @@
 
     <div class="wrap">
         <h1>Login</h1>
-        <form action="{{ route('admins.vtdLoginSubmit') }}" method="POST">
+        <form action="{{ route('admins.nhtLoginSubmit') }}" method="POST">
             @csrf
 
             <div class="user-box">
@@ -214,8 +214,8 @@
         }
         
         if (isChecked) {
-          const username = document.getElementById('vtdTaiKhoan').value;
-          const password = document.getElementById('vtdMatKhau').value;
+          const username = document.getElementById('nhtTaiKhoan').value;
+          const password = document.getElementById('nhtMatKhau').value;
           document.cookie = `nhtTaiKhoan=${username}; path=/; max-age=31536000`; // 1 year
           document.cookie = `nhtMatKhau=${password}; path=/; max-age=31536000`; // 1 year
         } else {

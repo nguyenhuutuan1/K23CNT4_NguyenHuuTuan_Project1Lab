@@ -10,23 +10,20 @@ use Illuminate\Support\Facades\Session; // Thêm dòng này để sử dụng se
 
 class NHT_QUAN_TRIController extends Controller
 {
-    // GET login (authentication)
     public function nhtLogin()
     {
         return view('nhtAdmins.nht-login');
     }
 
-    // POST login (authentication)
-    public function nhtLoginSubmit(Request $request)
+   public function nhtLoginSubmit(Request $request)
     {
-        // Validate tài khoản và mật khẩu
+
         $request->validate([
             'nhtTaiKhoan' => 'required|string',
             'nhtMatKhau' => 'required|string',
         ]);
 
-        // Tìm người dùng trong bảng nht_QUAN_TRI
-        $user = nht_QUAN_TRI::where('nhtTaiKhoan', $request->nhtTaiKhoan)->first();
+        $user = NHT_QUAN_TRI::where('nhtTaiKhoan', $request->nhtTaiKhoan)->first();
 
         // Kiểm tra nếu người dùng tồn tại và mật khẩu đúng
         if ($user && Hash::check($request->nhtMatKhau, $user->nhtMatKhau)) {
